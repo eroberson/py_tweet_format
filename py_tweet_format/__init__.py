@@ -33,11 +33,11 @@ def count_word_chars( text, shortened_url_size ):
 		raise TypeError( "count_word_chars function requires string input" )
 
 	url = re.compile( u'^(https{0,1}|ftp)\:\/\/', re.IGNORECASE )
-	pre_icann_tld = re.compile( u'\.(com|org|net|int|edu|gov|mil)$', re.IGNORECASE )
+	pre_icann_tld = re.compile( u"\.(com|org|net|int|edu|gov|mil)$", re.IGNORECASE )
 
 	if url.match( text ):
 		return shortened_url_size
-	elif pre_icann_tld.match( text ):
+	elif pre_icann_tld.search( text ):
 		return shortened_url_size
 	else:
 		return len( text )
