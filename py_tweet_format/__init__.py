@@ -12,7 +12,7 @@ import sys
 ####################
 __script_path__ = sys.argv[0]
 __script_name__ = __script_path__.split('/')[-1].split('\\')[-1]
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 #############
 # Functions #

@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
 	name = "py_tweet_format",
 	packages = ['py_tweet_format'],
-	version = "1.0.0",
+	version = "1.0.1",
 	description = 'Tool for formatting text files into tweets',
 	author = "Elisha Roberson",
 	author_email = 'dr.eli.roberson@gmail.com',
